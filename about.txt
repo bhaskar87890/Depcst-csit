@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        body{
+            background-color:aqua;
+        }
+        .heading{
+            width:90%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px auto;
+
+        }
+        .heading h1{
+            font: size 50px; ;
+            color: #000; ;
+            margin-bottom:25px ;
+            position: relative ;
+        }
+        .heading h1::after{
+            content:"";
+            position:absolute;
+            width:100% ;
+            height:4px;
+            display:block; 
+            margin:0 auto;
+            background-color: #4caf50;
+        }
+        .heading p{
+            font-size:18px;
+            color:#666;
+            margin-bottom: 35px;
+        }
+        .container{
+            width:90% ;
+            margin:0 auto ;
+            padding:10px 20px;
+
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .about-image{
+            flex:1;
+            margin-right: 40px;
+            overflow:hidden;
+        }
+        .about-image img{
+            max-width:100%;
+            height:auto;
+            display:block;
+            
+        }
+        .about-us {
+            flex:1;
+        }
+        .about-us  p{
+            font-size: 18px;
+            line-height:1.5;
+            color:#666;
+
+        }
+        .about-us  .read-more{
+            display: inline-block;
+            padding:10px 20px;
+            background-color: #4caf50;
+            color:#fff;
+            font-size:19px;
+            text-decoration:none;
+            border-radius: 25px;
+            margin-top:15px;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class ="heading">
+        <h1>About Us</h1>
+        <p>Virtual care services, virtual medical care, or virtual patient care - does any of this ring a bell in your head? If yes, then you are somewhat familiar with the idea and concept of virtual health.</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="patient.jpg">
+            </div>
+            <div class="about-us ">
+                <p>Virtual health consists of digital tools and software programs for a healthcare service provider to improve patient care quality and can be accessed through digital devices such as smartphones, tablets, laptops, or desktop computers. It also provides a bridge between patients and physicians regardless of their geographic location. Consumers can video-chat with a physician or specialist instead of physically going to the doctor's office. This is all that you need to know about the aspect of virtual health.</p>
+                <a href="#"class="read-more">Read More</a>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
