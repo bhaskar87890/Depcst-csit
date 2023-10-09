@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why us</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        body{
+            background-color:aqua;
+        }
+        .heading{
+            width:90%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px auto;
+
+        }
+        .heading h1{
+            font: size 50px; ;
+            color: #000; ;
+            margin-bottom:25px ;
+            position: relative ;
+        }
+        .heading h1::after{
+            content:"";
+            position:absolute;
+            width:100% ;
+            height:4px;
+            display:block; 
+            margin:0 auto;
+            background-color: #4caf50;
+        }
+    
+        .container{
+            width:90% ;
+            margin:0 auto ;
+            padding:10px 20px;
+
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .image{
+            flex:1;
+            margin-right: 40px;
+            overflow:hidden;
+        }
+        .image img{
+            max-width:100%;
+            height:auto;
+            display:block;
+            
+        }
+        .why-us {
+            flex:1;
+        }
+        .why-us  p{
+            font-size: 18px;
+            line-height:1.5;
+            color:#666;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Why us</h1>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="image">
+                <img src="why us.jpg">
+            </div>
+            <div class="why-us">
+                <p>Organization is also viewed as a system. System concepts recognize that organizations are made up of components, each of which has exclusive properties, abilities and reciprocated associations. The constituent elements of a system are linked together in such complex ways that actions taken by one individual have far reaching effects on others.Organization is very often viewed as a group of persons contributing their efforts towards certain goals.Organization refers to the structure and interactions among various job positions which are created to realize certain objectives.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
