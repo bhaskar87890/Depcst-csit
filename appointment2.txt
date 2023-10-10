@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>BOOK NOW</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            height:100vh;
+            background-color:aqua;
+        }
+        .container{
+            max-width:650px;
+            padding:28px;
+            margin:0 28px;
+}
+h2{
+    font-size:26px;
+    font-weight:600;
+    text-align:left;
+    color:black;
+    padding-bottom:8px;
+    border-bottom:1px solid white;
+
+}
+.content{
+    display: flex;
+    flex-wrap:wrap;
+    width:50%;
+    padding-bottom:15px;
+}
+.input-box{
+    display:flex;
+    flex-wrap:wrap;
+    width:50%;
+    padding-bottom:15px;
+}
+.input-box:nth-child(2n){
+    justify-content:end;
+}
+.input-box label, .gender-title{
+    width:95%;
+    font-weight:bold;
+    margin:5px 0;
+}
+.input-box input{
+    height:40px;
+    width:95%;
+    padding:0 10px;
+    border-radius:5px;
+    border:1px solid white;
+    outline:none;
+}
+.gender-category{
+    color:grey;
+}
+.gender-category label{
+    padding:0 20px 0 5px;
+    font-size:14px;
+}
+.gender-category label, .gender-category input{
+    cursor:pointer;
+}
+.button-container{
+    margin:15px 0;
+}
+.button-container button{
+    width:100%;
+    margin-top:10px;
+    padding:10px;
+    display:block;
+    font-size:20px;
+    color:white;
+    border:none;
+    border-radius:5px;
+    
+
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method=post>
+            <h2>BOOK NOW </h2>
+            <br>
+            <p>Let's start booking now!</p>
+    <div class="content">
+            
+                <div class="input-box">
+                    <label for ="name" >Your full name ?</label>
+                    <input type="text"  id="name" placeholder="Write your name here..." required>
+                </div>
+                <div class="input-box">
+            
+                    <label for ="email">Your email address ?</label>
+                    <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
+                </div>
+                <div class ="input-box">
+                  <label for ="people" >How many people ?</label>
+                    <select name="people" id="people" required>
+                        <option value="">---People---</option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                    </select>
+             
+                </div>
+                <div class="input-box">
+                    <label for ="time">What time ?</label>
+                    <input type="time" name="time" id="time" placeholder="Time" required>
+                </div>
+                <div class="input-box">
+                    <label for="date">What is the date ?</label>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+                <div class="input-box">
+                    <label for="number">Your phone number ?</label>
+                    <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                </div>
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender"id="male">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender"id="male">
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender"id="other">
+                    <label for="gender">Other</label>
+                </div>
+                <div id="button-container">
+                    <button type="submit">SUBMIT</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
